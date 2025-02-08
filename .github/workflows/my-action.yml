@@ -1,0 +1,21 @@
+name: My Custom Action
+
+# Triggers the workflow on push events to the "main" branch.
+on:
+  push:
+    branches:
+      - main
+  # Optionally, you can also enable manual triggering with:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      # Step to check out the repository (optional but common)
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      # Step with your email in the name as required by the challenge.
+      - name: mounesh.kalimisetty@straive.com
+        run: echo "Hello, world!"
